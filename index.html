@@ -5,14 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TremorTrack Test Instructions</title>
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:640px;margin:0 auto;padding:24px 16px;line-height:1.5;color:#1d2433;background:#fff}
+  :root{--ink:#1d2433;--bg:#fff;--note:#fff7e0;--bar:#e0a800}
+  @media (prefers-color-scheme: dark){:root{--ink:#eef1f5;--bg:#14181f;--note:#2e2712;--bar:#e0b84a}}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:640px;margin:0 auto;padding:24px 16px;line-height:1.5;color:var(--ink);background:var(--bg)}
   h1{font-size:1.5rem;margin-bottom:.25rem}
-  .note{background:#fff7e0;border-left:4px solid #e0a800;padding:10px 14px;border-radius:4px}
+  .note{background:var(--note);border-left:4px solid var(--bar);padding:10px 14px;border-radius:4px}
 </style>
 </head>
 <body>
 <h1>TremorTrack (Test)</h1>
-<p>Tester instructions will appear here with the first app build (milestone M1).</p>
-<p class="note">Hosting check: if you can read this page, GitHub Pages is working.</p>
+<p>TremorTrack is a prototype research app under development by NSATS. It is not a medical device and is not
+available to the public.</p>
+<p class="note">Test instructions are private. Invited testers find them next to each test build, in the private
+project repository (<code>TESTING.md</code>).</p>
 </body>
 </html>
